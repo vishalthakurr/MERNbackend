@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    form {
+        padding: 6px;
+        display: flex;
+        color: white;
+        text-align: center;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+
+        border: 2px solid gray;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<body>
+    <h1>FORM </h1>
+
+    <form action="bakend.php">
+        <div>
+            <label for="name">NAME :</label>
+            <input type="text" name="name" id="name">
+
+        </div>
+        <br>
+        <div>
+
+            <label for="rollno">RollNo :</label>
+            <input type="text" name="rollno" id="rollno">
+
+        </div>
+
+        <br>
+        <div>
+
+            <label for="email">e-mail :</label>
+            <input type="text" name="e-mail" id="email">
+
+        </div>
+
+        <br>
+        <div>
+
+            <label for="bouns">Bouns :</label>
+            <input type="number" name="bouns" id="bouns">
+
+        </div>
+
+        <br>
+        <div>
+
+            <label for="eligible">Eligible :</label>
+            <input type="checkbox" name="eligible" id="eligible">
+
+        </div>
+
+        <br>
+        <div>
+
+            <label for="date">Date :</label>
+            <input type="date" name="date" id="date">
+
+        </div>
+
+        <br>
+        <div>
+
+            <label for="gender">Gender :</label>
+            Male :<input type="radio" name="gender" id="gender">
+            Femail :<input type="radio" name="gender" id="gender">
+            Other :<input type="radio" name="gender" id="gender">
+        </div>
+
+
+        <br>
+        <div>
+
+            <label for="text">writing about somthing ?</label> <br>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+
+        </div>
+
+
+        <br>
+        <div>
+
+            <label for="class">Class :</label>
+            <select name="class" id="class">
+                <option value="bca">BCA</option>
+                <option value="mba">BBA/option>
+                <option value="mca">MCA</option>
+                <option value="bba">MBA</option>
+            </select>
+
+        </div>
+
+
+        <br>
+        <div>
+
+
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset">
+
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>

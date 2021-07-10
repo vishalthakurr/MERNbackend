@@ -1,0 +1,149 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    form {
+        padding: 6px;
+        display: flex;
+        color: white;
+        text-align: center;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+
+        border: 2px solid gray;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<body>
+
+    {{>navbar}}
+    <h1>FORM </h1>
+
+    <form action="/register" method="POST">
+        <div>
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" required>
+
+        </div>
+        <br>
+        <div>
+
+            <label for="phone">Phone :</label>
+            <input type="number" name="phone" id="phone" required>
+
+        </div>
+
+        <br>
+        <div>
+
+            <label for="email">email :</label>
+            <input type="email" name="email" id="email" required>
+
+        </div>
+        <br>
+
+         <div>
+
+            <label for="address">Address :</label>
+            <input type="text" name="address" id="address" required>
+
+        </div>
+
+        <br>
+      
+
+        <br> 
+        <div>
+
+            <label for="date">DOB :</label>
+            <input type="date" name="dob" id="date" required>
+
+        </div>
+
+        <br>
+        <div>
+
+            <label for="gender">Gender :</label>
+            <span>Male :</span><input type="radio" name="gender" id="gender" value="male">
+            <span>Female :</span><input type="radio" name="gender" id="gender" value="female">
+         
+        </div>
+        <br>
+
+          <div>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+
+        </div>
+        <br>
+          <div>
+
+            <label for="confirm_password"> Confirm Password:</label>
+            <input type="password" name="confirm_password" id="conform_password" >
+
+        </div>
+        <br>
+
+
+        <br>
+        
+
+
+        <br>
+        <div>
+
+            <label for="class">Class :</label>
+            <select name="class" id="class">
+                <option value="bca">BCA</option>
+                <option value="mba">BBA</option>
+                <option value="mca">MCA</option>
+                <option value="bba">MBA</option>
+            </select>
+
+        </div>
+
+
+        <br>
+        <div>
+
+
+            <input type="submit" value="Register">
+            
+
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>
+</body>
+</html>
